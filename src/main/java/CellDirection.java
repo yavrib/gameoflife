@@ -1,3 +1,3 @@
 public enum CellDirection {
-    S, N
+    S, W, E, N
 }
