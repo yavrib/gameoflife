@@ -9,8 +9,8 @@ public class CellTests {
     public void cell_whenHasTwoNeighbours_shouldBeAlive() {
         Cell cell = new Cell(CellState.ALIVE);
 
-        cell.neighbours.put(CellDirection.N, new Cell(CellState.ALIVE));
-        cell.neighbours.put(CellDirection.S, new Cell(CellState.ALIVE));
+        cell.getNeighbours().put(CellDirection.N, new Cell(CellState.ALIVE));
+        cell.getNeighbours().put(CellDirection.S, new Cell(CellState.ALIVE));
 
         Assert.assertTrue(CellState.ALIVE.equals(cell.nextState()));
     }
